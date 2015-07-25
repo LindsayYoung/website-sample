@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}{% endblock %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+    <div class="navbar navebar-fixed-top">
+    	<div class="container">
+    		<div class="navbar-header">
+    			<a href="/" class="navbar-brand">Project Title</a>
+    		</div>
+    		<div calss="navbar-collapse">
+    			<ul class="nav navbar-nav navbar-right">
+    				<li><a>Research Question</a></li>
+    				<li><a>Project Discription</a></li>
+    				<li><a>Methoidology</a></li>
+    				<li><a href="/results">Results</a></li>
+    				<li><a href="/about">About the Author</a></li>
+    			</ul>
+    		</div>
+        </div>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
